@@ -1,0 +1,160 @@
+body {
+    background-image: url(kepek/hatter.jpg);
+    
+}
+
+header {
+    background-image: url(kepek/fejlec.jpg);
+    height: 100px;
+    text-align: center;
+    padding: 1%;
+    grid-area: h;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr;
+    gap: 10px;
+    background-color: white;
+    width: 100%;
+    max-width: 1000px;
+    margin:auto;
+    grid-template-areas: 
+    "h h h"
+    "n a as"
+    "f f f"
+    ;
+}
+
+header h1 {
+    color: white;
+}
+
+
+nav ul{
+    display: grid;
+    grid-template-columns: 100px;
+    gap:10px;
+    list-style: none;
+    
+    
+}
+
+nav ul li{
+    border: 1px solid  rgb(127, 176, 255);
+    border-radius: 10px;
+    padding: 1px;
+    text-align: center;
+    background-color:  rgb(127, 176, 255); 
+}
+
+nav ul a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+article {
+    text-align: center;
+    grid-area: a;
+}
+
+.felsokepek img {
+    border-radius: 10px;
+    border: 1px solid gray;
+    max-width: 200px;
+    box-shadow: 5px 10px #cab9b9;
+    padding: 10px;
+}
+
+.felsokepek{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    
+}
+
+.alsokepek img {
+    border-radius: 10px;
+    border: 1px solid gray;
+    max-width: 200px;
+    box-shadow: 5px 10px #cab9b9;
+    padding: 10px;
+   
+
+}
+
+.alsokepek{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    
+}
+
+
+
+aside {
+    border-radius: 10px;
+    border: 3px solid gray;
+    grid-area: as;
+    padding: 15px;
+}
+
+footer {
+    background-color: aqua;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    grid-area: f;
+}
+
+@media screen and (max-width:600px){
+    nav ul {
+        grid-template-columns: 1fr;
+    }
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "h"
+            "n"
+            "a"
+            "as"
+            "f"
+        ;
+    }
+}
+
+
+table, td, th {
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    max-width: 1000px;
+}
+
+
+thead tr {
+    background-color: white;
+    
+}
+tbody tr{
+    border: none;
+}
+
+th {
+    color: black;
+    
+    
+}
+tbody tr:nth-child(odd){
+    background-color: rgb(127, 176, 255);
+}
